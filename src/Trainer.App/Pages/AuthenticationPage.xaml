@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Trainer.App.Pages.AuthenticationPage"
+             Title="Login"
+             Padding="20">
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Label Text="Login"
+               FontSize="32"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               Margin="0,0,0,20"/>
+
+        <Entry x:Name="UsernameEntry"
+               Placeholder="Username"
+               Keyboard="Email"
+               Margin="0,0,0,10"/>
+
+        <Entry x:Name="PasswordEntry"
+               Placeholder="Password"
+               IsPassword="True"
+               Margin="0,0,0,20"/>
+
+        <Button Text="Login"
+                BackgroundColor="#4CAF50"
+                TextColor="White"
+                CornerRadius="10"
+                Padding="10"
+                Clicked="OnLoginButtonClicked"/>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Trainer.App.MainPage"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <AbsoluteLayout>
+        <!-- Background Image -->
+
+        <!-- Background Image -->
+        <Image Source="bg.jpeg"
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0,0,1,1"
+               AbsoluteLayout.LayoutFlags="All"
+               />
+
+        <BoxView Color="#80000000" 
+                 AbsoluteLayout.LayoutBounds="0,0,1,1"
+                 AbsoluteLayout.LayoutFlags="All"/>
+
+            <StackLayout Padding="20" VerticalOptions="Center" HorizontalOptions="Center" AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1" AbsoluteLayout.LayoutFlags="PositionProportional">
+            <Label Text="Manage your trainees"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,20"/>
+
+            <Button Text="Register"
+                    BackgroundColor="#4CAF50"
+                    TextColor="White"
+                    CornerRadius="10"
+                    Padding="10"
+                    Clicked="OnRegisterButtonClicked"
+                    Margin="0,0,0,10"/>
+
+            <Button Text="Authenticate"
+                    BackgroundColor="#2196F3"
+                    TextColor="White"
+                    CornerRadius="10"
+                    Padding="10"
+                    Clicked="OnAuthenticateButtonClicked"/>
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>
