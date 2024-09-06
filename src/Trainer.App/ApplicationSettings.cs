@@ -10,5 +10,6 @@ namespace Trainer.App
     {
         public const string BaseUrl = "http://localhost:8000";
         public const string loginUrl = "auth/login";
+        public const string TrainerUrl = "profile/trainer";
     }
 }

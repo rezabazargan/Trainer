@@ -5,7 +5,6 @@ namespace Trainer.App
 {
     public partial class MainPage : ContentPage
     {
-
         public MainPage()
         {
             InitializeComponent();
@@ -16,7 +15,7 @@ namespace Trainer.App
         private async void OnRegisterButtonClicked(object sender, EventArgs e)
         {
             // Navigate to the Registration page
-            //await Navigation.PushAsync(new RegistrationPage());
+            await Navigation.PushAsync(new RegisterPage(Handler.MauiContext));
         }
 
         private async void OnAuthenticateButtonClicked(object sender, EventArgs e)
@@ -25,5 +24,4 @@ namespace Trainer.App
             await Navigation.PushAsync(new AuthenticationPage(Handler.MauiContext));
         }
     }
-
 }

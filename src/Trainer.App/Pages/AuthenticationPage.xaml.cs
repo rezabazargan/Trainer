@@ -4,12 +4,13 @@ namespace Trainer.App.Pages;
 
 public partial class AuthenticationPage : ContentPage
 {
-	private readonly AuthenticationService? _authenticationService;
+    private readonly AuthenticationService? _authenticationService;
+
     public AuthenticationPage(IMauiContext mauiContext)
-	{
-		InitializeComponent();
-		_authenticationService = mauiContext.Services.GetService<AuthenticationService>();
-	}
+    {
+        InitializeComponent();
+        _authenticationService = mauiContext.Services.GetService<AuthenticationService>();
+    }
 
     private async void OnLoginButtonClicked(object sender, EventArgs e)
     {

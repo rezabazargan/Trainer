@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using Trainer.App.Services;
+using Trainer.App.ViewModels;
 
 namespace Trainer.App
 {
@@ -22,9 +23,11 @@ namespace Trainer.App
             };
             builder.Services.AddSingleton(httpClient);
             builder.Services.AddSingleton<AuthenticationService>();
+            builder.Services.AddSingleton<RegistrationService>();
+            builder.Services.AddSingleton<RegisterViewModel>();
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
